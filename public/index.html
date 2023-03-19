@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <title>登入</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css?family=Arvo" rel="stylesheet">
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css'>
+</head>
+<body>
+  <div class="container" id="container">
+    <div class="form-container sign-up-container">
+      <form action="#">
+        <h1>註冊帳號</h1>
+        <span>請輸入您的個人資料以開設帳戶。</span>
+        <input type="text" placeholder="姓名" />
+        <input type="email" placeholder="電子郵件" />
+        <input type="password" placeholder="密碼" />
+        <button>註冊</button>
+      </form>
+    </div>
+    <div class="form-container sign-in-container">
+      <form action="#">
+        <h1>登入</h1>
+        <input type="email" placeholder="電子郵件" />
+        <input type="password" placeholder="密碼" />
+        <a href="#">忘記密碼</a>
+        <button>登入</button>
+      </form>
+    </div>
+    <div class="overlay-container">
+      <div class="overlay">
+        <div class="overlay-panel overlay-left">
+          <h1>歡迎光臨！</h1>
+          <p>註冊完等不急想使用我們的服務了嗎?<br>點擊這裡登入。</p>
+          <button class="ghost" id="signIn">立即登入</button>
+        </div>
+        <div class="overlay-panel overlay-right">
+          <h1>您好！</h1>
+          <p>還沒有帳號嗎?點擊這裡註冊新帳號。</p>
+          <button class="ghost" id="signUp">註冊帳號</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="script.js" charset="utf-8"></script>
+</body>
+</html>
