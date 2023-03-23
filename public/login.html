@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <title>登入</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css?family=Arvo" rel="stylesheet">
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css'>
+</head>
+<body>
+  <div class="container" id="container">
+    <div class="form-container sign-up-container">
+      <form action="signup" method="POST">
+        <h1>註冊帳號</h1>
+        <span>請輸入您的個人資料以開設帳戶。</span>
+        <input type="text" name="name" placeholder="姓名" />
+        <input type="text" name="email" placeholder="電子郵件" />
+        <input type="password" name="password" placeholder="密碼" />
+        <input class="button" type="submit" value="註冊" id="popup">
+ 
+      </form>
+    </div>
+    
+    <div class="form-container sign-in-container">
+      <form action="/signin" method="POST">
+        <h1>登入</h1>
+        <input type="text" name="email" placeholder="電子郵件" />
+        <input type="password" name="password" placeholder="密碼" />
+        <a href="#">忘記密碼</a>
+
+        <input class="button" type="submit" value="登入">
+      </form>
+    </div>
+    <div class="overlay-container">
+      <div class="overlay">
+        <div class="overlay-panel overlay-left">
+          <h1>歡迎光臨！</h1>
+          <p>註冊完等不急想使用我們的服務了嗎?<br>點擊這裡登入。</p>
+          <div class="ghost button" id="signIn">立即登入</div>
+        </div>
+        <div class="overlay-panel overlay-right">
+          <h1>您好！</h1>
+          <p>還沒有帳號嗎?點擊這裡註冊新帳號。</p>
+          <div class="ghost button" id="signUp">註冊帳號</div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class='show'></div>
+  <script src="script.js" charset="utf-8">
+
+
+    // <input class='popuptest' type="button" value="按我">
+    // <p class='show'></p>
+
+
+        var button = document.querySelector('#popup');
+        var showtxt = document.querySelector('.show');
+
+        function popup2(e) {
+            window.confirm('ConfirmBox測試成功嗎');
+            window.alert('ConfirmBox測試成功嗎');
+            console.log('12');
+        };
+        button.addEventListener('click', popup2);
+
+
+
+
+  </script>
+</body>
+</html>
